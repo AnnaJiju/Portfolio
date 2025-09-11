@@ -8,19 +8,20 @@
         <script src="https://kit.fontawesome.com/a9917af050.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!-- Right Fixed Navigation -->
+        <div class="right-fixed-menu-container">
+            <nav class="right-fixed-menu">
+                <ul>
+                    <li><a href="#header" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <div id="header">
             <div class="container">
-                <nav>
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                </nav>
                 <div class="header-text">
                     <p>Full Stack Web Developer</p>
                     <h1>Hi, I'm <span>Anna Jiju</span></h1>
@@ -122,7 +123,7 @@
                         </div>
                     </div>
                     <div class="work project-visible">
-                        <img src="images/work-8.jpeg">
+                        <img src="images/work-2.png">
                         <div class="layer">
                             <h3>StockIt</h3>
                             <p>Built a product management system with image uploads, inventory tracking, filtering, and low-stock alerts using React and Supabase</p>
@@ -130,7 +131,7 @@
                         </div>
                     </div>
                     <div class="work project-visible">
-                        <img src="images/work-9.jpeg">
+                        <img src="images/work-3.png">
                         <div class="layer">
                             <h3>Streamify</h3>
                             <p>Developed a language learning platform enabling real-time chat and video calls for immersive global communication.</p>
@@ -138,14 +139,14 @@
                         </div>
                     </div>
                     <div class="work project-visible">
-                        <img src="images/work-7.png">
+                        <img src="images/work-4.png">
                         <div class="layer">
                             <h3>Blinkit Sales Dashboard</h3>
                             <p>Designed an interactive sales dashboard with real-time insights, visual analytics, and performance tracking using Power BI.</p>
-                            <a href="https://github.com/AnnaJiju/Blinkit-powerbi-dashboard"><i class="fa-solid fa-link"></i></a>
+                            <a href="https://github.com/AnnaJiju/Blinkit-powerbi-dashboard/blob/main/Screenshot%201.png"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
-                    <div class="work project-visible">
+                    <!-- <div class="work project-visible">
                         <img src="images/work-2.png">
                         <div class="layer">
                             <h3>Fighter-Game</h3>
@@ -168,8 +169,8 @@
                             <p>A JavaScript Rock, Paper, Scissors game where the player selects an option, the computer generates a random choice, and the winner is decided.</p>
                             <a href="https://annabinoy18.github.io/RPS/"><i class="fa-solid fa-link"></i></a>
                         </div>
-                    </div>
-                    <div class="work">
+                    </div> -->
+                    <!-- <div class="work">
                         <img src="images/work-5.png">
                         <div class="layer">
                             <h3>Hero-Hub</h3>
@@ -184,7 +185,7 @@
                             <p>The Tip Calculator is a straightforward web application that enables users to quickly calculate the tip amount based on their total bill and desired tip percentage..</p>
                             <a href="https://annabinoy18.github.io/Tip-calculator/"><i class="fa-solid fa-link"></i></a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <a  class="btn" id="seemore">See more</a>
             </div>
@@ -251,15 +252,33 @@
         
         </script>
 
+        <!-- Animated underline for active nav link -->
         <script>
-            var sidemenu=document.getElementById("sidemenu");
-
-            function openmenu(){
-                sidemenu.style.right="0";
+        // Scroll-based active nav link
+        const navLinks = document.querySelectorAll('.right-fixed-menu .nav-link');
+        const sections = ['header', 'about', 'services', 'portfolio', 'contact'];
+        function activateNavLink() {
+            let index = sections.length - 1;
+            for (let i = 0; i < sections.length; i++) {
+                const section = document.getElementById(sections[i]);
+                if (section && window.scrollY + 100 < section.offsetTop) {
+                    index = i - 1;
+                    break;
+                }
             }
-            function closemenu(){
-                sidemenu.style.right="-200px";
-            }
+            navLinks.forEach((link, i) => {
+                link.classList.remove('active');
+                if (i === Math.max(0, index)) link.classList.add('active');
+            });
+        }
+        window.addEventListener('scroll', activateNavLink);
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        activateNavLink();
         </script>
         <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxVplBWS6PIZ_PwzLx_qu_ytNFE-Y7M3YDw1Bg45nlH9SFFTpPojMmeqZzf6FkdCf-b/exec'
