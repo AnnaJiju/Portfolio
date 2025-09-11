@@ -1,4 +1,4 @@
-📂 Anna Jiju - Portfolio
+📂   PORTFOLIO
 
 Welcome to my portfolio, where I present my projects, skills, and journey as a web developer. This portfolio highlights the projects I have built, along with my approach to designing clean and user-friendly interfaces using HTML and CSS.
 
