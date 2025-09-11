@@ -1,0 +1,302 @@
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anna Jiju</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a9917af050.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Right Fixed Navigation -->
+        <div class="right-fixed-menu-container">
+            <nav class="right-fixed-menu">
+                <ul>
+                    <li><a href="#header" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header">
+            <div class="container">
+                <div class="header-text">
+                    <p>Full Stack Web Developer</p>
+                    <h1>Hi, I'm <span>Anna Jiju</span></h1>
+                </div>
+            </div>
+        </div>
+        <!-- ==========about============ -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpg" alt="image">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I'm Anna Jiju, a Computer Science student at Model Engineering College, Kochi, with a strong foundation in full-stack development and a keen interest in AI and intelligent systems. I'm proficient in technologies like Python, JavaScript, React, Supabase, Express, MongoDB, PostgreSQL, and more. With a solid grasp of both frontend and backend development, I enjoy building scalable, user-centric web applications and continuously expanding my technical skill set.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Full Stack Development</span><br>Build scalable web apps using React, Express, and MongoDB.</li>           
+                                <li><span>Event Management </span><br>Plan and manage technical and non-technical events.</li>
+                                <li><span>Problem-Solving </span><br>Write efficient code in Python, JavaScript, and C++ for complex solutions.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Speaker Management Subhead, TedxMec</span><br>Coordinated with speakers to curate impactful talks and ensure a seamless event experience.</li>
+                                <li><span>Community head,TedxMec</span><br>Led community engagement initiatives, fostering collaboration and building strong networks to amplify the TEDx mission</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul class="education-list">
+                                <li>
+                                    <span>B.Tech in Computer Science and Engineering</span><br>
+                                    Govt. Model Engineering College, Thrikkakara<br>
+                                    <div class="edu-row">
+                                    <span>2022 – 2026 (Expected)</span>
+                                    <span>Aggregate: 9.1/10</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Class XII (CBSE)</span><br>
+                                    Rajagiri Public School<br>
+                                    <div class="edu-row">
+                                    <span>2020 – 2022</span>
+                                    <span>Percentage: 95%</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Class X (CBSE)</span><br>
+                                    Rajagiri Public School<br>
+                                    <div class="edu-row">
+                                    <span>2019 – 2020</span>
+                                    <span>Percentage: 95%</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-----------------------------service------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p> I specialize in building responsive, user-friendly websites that are fully customized to meet the unique requirements of each client. Whether it's a personal portfolio or a complex web application, I ensure functionality, scalability, and a seamless user experience across all devices.</p>
+                        <a href="#portfolio">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <h2>Event Planning </h2>
+                        <p>With a strong background in organizing and managing events, I offer comprehensive event planning services, including tech events, workshops, and hackathons. I handle everything from logistics and scheduling to ensuring smooth execution and participant engagement.</p>
+                        <a href="#portfolio">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------My projects------------------------------>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work project-visible">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Math-solver</h3>
+                            <p>Developed an AI-powered math solver that recognizes and solves handwritten equations using deep learning and Google Cloud APIs</p>
+                            <a href="https://mathgptproject.onrender.com/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work project-visible">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>StockIt</h3>
+                            <p>Built a product management system with image uploads, inventory tracking, filtering, and low-stock alerts using React and Supabase</p>
+                            <a href="https://stock-it-mu.vercel.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work project-visible">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Streamify</h3>
+                            <p>Developed a language learning platform enabling real-time chat and video calls for immersive global communication.</p>
+                            <a href="https://streamify-chats.onrender.com/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work project-visible">
+                        <img src="images/work-4.png">
+                        <div class="layer">
+                            <h3>Blinkit Sales Dashboard</h3>
+                            <p>Designed an interactive sales dashboard with real-time insights, visual analytics, and performance tracking using Power BI.</p>
+                            <a href="https://github.com/AnnaJiju/Blinkit-powerbi-dashboard/blob/main/Screenshot%201.png"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <!-- <div class="work project-visible">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Fighter-Game</h3>
+                            <p>Engage in fast-paced battles with a two-player fighting game built in JavaScript, where victory depends on your speed in clicking specific keyboard letters!</p>
+                            <a href="https://annabinoy18.github.io/Fighter-Game/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work project-visible">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>HangMan-Game</h3>
+                            <p>Guess the hidden word in this engaging Hangman game before running out of attempts, testing your vocabulary and problem-solving skills.</p>
+                            <a href="https://annabinoy18.github.io/HangMan/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-4.png">
+                        <div class="layer">
+                            <h3>RPS-Game</h3>
+                            <p>A JavaScript Rock, Paper, Scissors game where the player selects an option, the computer generates a random choice, and the winner is decided.</p>
+                            <a href="https://annabinoy18.github.io/RPS/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div> -->
+                    <!-- <div class="work">
+                        <img src="images/work-5.png">
+                        <div class="layer">
+                            <h3>Hero-Hub</h3>
+                            <p>A superhero information website where users can enter a superhero's name to view detailed stats or generate a random superhero's details with a single click.</p>
+                            <a href="https://annabinoy18.github.io/Super-Heros/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-6.png">
+                        <div class="layer">
+                            <h3>Tip Calculator</h3>
+                            <p>The Tip Calculator is a straightforward web application that enables users to quickly calculate the tip amount based on their total bill and desired tip percentage..</p>
+                            <a href="https://annabinoy18.github.io/Tip-calculator/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+                <a  class="btn" id="seemore">See more</a>
+            </div>
+        </div>
+        <!---------------------------Contacts------------------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>annajiju2004@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 8590434675</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/anna-jiju-0993b7255/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/anna_jiju/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://github.com/AnnaJiju"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                        <a href="ANNA JIJU - Resume[1].pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright @</i></p>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links")
+            var tabcontents=document.getElementsByClassName("tab-contents")
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <script>
+           document.getElementById("seemore").addEventListener('click', function() {
+                const projects = document.querySelectorAll(".work");
+                
+                // Show all projects
+                projects.forEach(project => {
+                    project.classList.add('project-visible');
+                });
+
+                // Hide the button after making all projects visible
+                this.style.display = 'none';
+        });
+
+        
+        </script>
+
+        <!-- Animated underline for active nav link -->
+        <script>
+        // Scroll-based active nav link
+        const navLinks = document.querySelectorAll('.right-fixed-menu .nav-link');
+        const sections = ['header', 'about', 'services', 'portfolio', 'contact'];
+        function activateNavLink() {
+            let index = sections.length - 1;
+            for (let i = 0; i < sections.length; i++) {
+                const section = document.getElementById(sections[i]);
+                if (section && window.scrollY + 100 < section.offsetTop) {
+                    index = i - 1;
+                    break;
+                }
+            }
+            navLinks.forEach((link, i) => {
+                link.classList.remove('active');
+                if (i === Math.max(0, index)) link.classList.add('active');
+            });
+        }
+        window.addEventListener('scroll', activateNavLink);
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        activateNavLink();
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxVplBWS6PIZ_PwzLx_qu_ytNFE-Y7M3YDw1Bg45nlH9SFFTpPojMmeqZzf6FkdCf-b/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Successfully Submitted.."
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
