@@ -3,7 +3,6 @@
 Welcome to my portfolio, where I present my projects, skills, and journey as a web developer. This portfolio highlights the projects I have built, along with my approach to designing clean and user-friendly interfaces using HTML and CSS.
 
 🔗 Live Demo
-Check out the live version of my portfolio here:
 ➡️ [https://annajiju.github.io/Portfolio/](https://annajiju.github.io/Portfolio/)
 
 (Replace the above URL with your actual live demo link.)
